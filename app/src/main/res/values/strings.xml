@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">InClass05</string>
+    <string name="btnGo">Go</string>
+    <string name="tv_Search">Search Keyword</string>
+</resources>

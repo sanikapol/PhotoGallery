@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="47dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="332dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/btnGo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_selectKeyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/tv_Search"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnGo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="382dp"
+        android:layout_height="368dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_selectKeyword"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/iv_prev"
+        android:layout_width="90dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_image"
+        app:srcCompat="@drawable/prev" />
+
+    <ImageView
+        android:id="@+id/iv_next"
+        android:layout_width="89dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_prev"
+        app:layout_constraintTop_toBottomOf="@+id/iv_image"
+        app:srcCompat="@drawable/next"
+        android:contentDescription="TODO" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="382dp"
+        android:layout_height="386dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_selectKeyword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
